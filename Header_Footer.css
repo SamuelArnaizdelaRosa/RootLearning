@@ -1,0 +1,448 @@
+* {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-y: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1F1960; 
+    border-radius: 10px;
+}
+
+/*Header*/
+header {
+    display: flex;
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+
+    height: 80px;
+    width: 100%;
+
+    background: #192229;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header>div {
+    height: 80px;
+    align-items: center;
+    display: flex;
+}
+
+/*Elementos de texto desplegables*/
+
+#elementos_links {
+    height: 100%;
+    padding: 0px;
+    margin: 10px;
+    transition: transform .5;
+    display: flex;
+}
+
+.elementos_link {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.elementos_link:hover {
+    background-color: #1192EE;
+}
+
+.elementos_link--dentro {
+    padding: 10px 120px 10px 10px;
+    border-radius: 10px;
+}
+
+.elemento_item {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(0deg);
+}
+
+.elemento_item:hover {
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(90deg);
+}
+
+.flecha {
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-top: 2px;
+}
+
+.elemento_destino {
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    bottom: 10px;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #364653;
+}
+
+/*Menu hamburguesa*/
+
+.elemtentos_burguer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.elemtentos_burguer img{
+    display: block;
+}
+
+/*Busqueda*/
+
+.busqueda,.busqueda--active {
+    -webkit-flex: auto;
+    flex: auto;
+    justify-content: right;
+}
+
+.busqueda input,.busqueda--active input{
+    position: relative;
+    box-sizing: border-box;
+    right: 10px;
+
+    padding: 10px 12px;
+    margin-left: 20px;
+    height: 48px;   
+    
+    background: rgba(42, 49, 106, 0.72);
+    border: 2px solid rgba(42, 49, 106, 0.72);
+    border-radius: 40px;
+    transition: all 0.8s ease;
+
+    color: white;
+    font-size: 16px;
+    
+}
+
+.busqueda input::placeholder,.busqueda--active input::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+.busqueda .desactivado,.busqueda--active .desactivado{
+    width: 0px;
+}
+
+.active {
+    width: 100%;
+}
+
+#boton_busqueda {
+    box-sizing: border-box;
+    position: absolute;
+    cursor: pointer;
+    
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+
+    background: #1F1960;
+    border: 2px solid #606164;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+#boton_salida {
+    margin-left: 10px;
+    padding: 10px;
+    cursor: pointer;
+
+    background: #1F1960;
+    border: 2px solid #606164;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.busqueda button:hover,.busqueda--active button:hover,#boton_salida:hover,#boton_busqueda:hover{
+    background: #1192EE;
+    transition: 0.7s;
+}
+
+/*Activar y desactivar botones*/
+.boton_busqueda--desactivado {
+    display: flex;
+}
+
+.boton_salida--desactivado {
+    display: none;
+}
+
+.boton_busqueda--desactivado {
+    display: flex;
+}
+
+.boton_salida--active {
+    display: none;
+}
+
+/*Desactivar exta de publicar cursos*/
+#publicar_curso_extra {
+    display: none;
+}
+
+/*Carrito*/
+.carrito {
+    margin: 0px 5px;
+}
+
+/*Login*/
+#login_nav {
+    display: none;
+}
+
+#login button,#login_nav button{
+    font-size: 18px;
+    color: white;
+    margin: 0px 5px;
+}
+
+#login .login,#login_nav .login {
+    padding: 8px 16px;
+    cursor: pointer;
+
+    width: 138px;
+    height: 42px;
+
+    box-sizing: border-box;
+    background: #1F1960;
+    border: 2px solid #606164;
+    border-radius: 8px;
+}
+
+#login button:hover,#login_nav button:hover{
+    background: #1192EE;
+    transition: 0.7s;
+}
+
+#login .register,#login_nav .register{
+    padding: 8px 16px;
+    cursor: pointer;
+
+    width: 200px;
+    height: 42px;
+
+    box-sizing: border-box;
+    background: #1F1960;
+    border: 2px solid #606164;
+    border-radius: 8px;
+}
+
+/*Porpiedades extra*/
+header img{
+    height: 90%;
+    margin: 0px 10px;
+}
+
+.prueba {
+    height: 2000px;
+}
+
+/*Responsive*/
+@media (max-width: 1300px){
+    .elementos_links div{ 
+        margin: 0px 5px;
+    }
+
+    header img {
+        height: 70%;
+    }
+}
+
+@media (max-width: 1210px){
+    .elementos_links div{ 
+        margin: 0px;
+    }
+
+    .elementos_link { 
+        font-size: 15px;
+        padding: 0px 10px;
+    }
+
+    #login .login {
+        font-size: 18px;
+    }
+
+    #login .register {
+        font-size: 18px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 1050px){
+    header img {
+        height: 60%;
+    }
+    .elementos_link { 
+        padding: 0px 5px;
+    }
+}
+
+@media (max-width: 950px){
+
+    /*Login*/
+    #login_nav {
+        height: 180px;
+        display: grid;
+
+        grid-auto-rows: max-content;
+        background-color: #364653;
+
+        align-content:center;
+        justify-content: center;
+        transition: all 0.8s ease;
+
+    }
+    #login_nav button {
+        margin: 7.5px 0;
+    }
+
+    #login_nav  .login {
+        width: 260px;
+    }
+
+    #login_nav  .register {
+        width: 260px;
+    }
+
+    #login {
+        display: none;
+    }
+
+    /*Burger*/
+   .elemtentos_burguer {
+        display: flex;
+   }
+
+   #elementos_links {
+        position: fixed;
+        max-width: 300px;
+        top: 80px;
+        bottom: 0px;
+        right: 0px;
+        margin: 0px;
+        
+        background-color: #364653;
+        overflow-y: auto;
+
+        display: grid;
+        grid-auto-rows: max-content;
+        transition: all 0.8s ease;
+   }
+
+   .elementos_link {
+        padding: 25px 0px;
+        padding-left: 30px;
+        height: auto;
+        padding: 15px 0px 15px 15px;
+        font-size: 20px;
+        background-color: #283540;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }   
+
+    .elemento_destino {
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        padding: 0;
+    }
+
+    .elementos_link--dentro {
+        margin-left: auto;
+        margin: 0;
+        padding: 10px 0px 10px 60px;
+        font-size: 17px;
+        background-color: #364653;
+        box-shadow: none;
+        border-radius: 0px; 
+    }
+
+    .elementos_link:hover {
+        background-color: #283540;
+        cursor: default;
+    }
+
+    .elementos_link--dentro:hover {
+        background-color: #1192EE;
+        cursor: pointer;
+    }
+
+    .elemento_destino {
+        clip-path: none;
+    }
+
+    .flecha {
+        display: none;
+    }
+
+    /*Cerrar menu*/
+    .menu_cerrado {
+        width: 0px;
+    }
+
+    .menu_abierto {
+        width: 300px;
+    }
+
+    #publicar_curso_extra {
+        display: grid;
+    }
+
+    @media (max-width: 650px){
+        /*Activar y desactivar botones*/
+        .busqueda--active {
+            width: 100%;
+            position: absolute;
+            background-color: #192229;
+        }
+        
+        .boton_salida--active {
+            display: flex;
+        }
+
+        .boton_busqueda--desactivado {
+            display: none;
+        }
+    }
+}
