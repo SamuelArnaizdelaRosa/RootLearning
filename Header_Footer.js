@@ -28,3 +28,11 @@ function showBurger() {
         elem1.className = "menu_cerrado";
     }
 }
+
+function loaded() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const busqueda = urlParams.get('busqueda')
+
+    document.getElementById("busqueda_texto_item").innerHTML = busqueda
+};

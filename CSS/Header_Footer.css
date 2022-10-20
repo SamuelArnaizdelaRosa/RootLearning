@@ -33,6 +33,7 @@ header {
     display: flex;
 
     position: fixed;
+    top: 0px;
     display: flex;
     align-items: center;
 
@@ -117,7 +118,6 @@ header>div {
 
 .elemtentos_burguer {
     height: 100%;
-    display: flex;
     align-items: center;
     padding: 0 15px;
     cursor: pointer;
@@ -129,7 +129,9 @@ header>div {
 }
 
 /*Busqueda*/
-
+#barra_busqueda {
+    display: flex;
+}
 .busqueda,.busqueda--active {
     -webkit-flex: auto;
     flex: auto;
@@ -357,7 +359,8 @@ header img{
         bottom: 0px;
         right: 0px;
         margin: 0px;
-        
+        z-index: 999;
+
         background-color: #364653;
         overflow-y: auto;
 
@@ -425,7 +428,7 @@ header img{
         display: grid;
     }
 
-    @media (max-width: 650px){
+    @media (max-width: 700px){
         /*Activar y desactivar botones*/
         .busqueda--active {
             width: 100%;
