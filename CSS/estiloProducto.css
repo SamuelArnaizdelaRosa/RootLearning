@@ -1,0 +1,433 @@
+* {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+body {
+    background-color: #3A3C3E;
+}
+
+#cabecera {
+    margin: 15px 5% 0 5%;
+    display: flex;
+    color: white;
+}
+
+#datos {
+    padding-top: 1rem;
+    font-size: 1.5vw;
+}
+
+#puntuacion p {
+    font-size: 25px;
+}
+
+#img_curso {
+    width: 70%;
+    min-width: 270px;
+    padding: 0;
+}
+
+#cabecera img {
+    width: 100%;
+    min-width: 250px;
+    max-width: 800px;
+    margin: 0;
+    object-fit: contain;
+}
+
+/*Código para el rating*/
+.rate {
+    float: left;
+    height: 30px;
+    margin-right: 5px;
+    margin-left: 8px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+/*Hasta aquí rating*/
+
+#profesor {
+    display: flex;
+    align-items: center;
+}
+
+#profesor svg {
+    margin-right: 4px;
+}
+
+#caract_curso {
+    margin: 15px 35% 0 5%;
+    color: white;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    background-color: #192229;
+}
+
+#caract_curso>div {
+    text-align: center;
+    align-items: center;
+    background-color: #3A3C3E;
+    width: 7vw;
+    height: 6vh;
+    margin: 5px 0;
+    padding-top: 5px;
+    padding-bottom: 0;
+    font-size: 1.2vw;
+}
+
+#caract_curso>div p {
+    margin-bottom: 10px;
+    margin-top: 2PX;
+}
+
+#compra {
+    position: fixed;
+    background-color: #2A316A;
+    border-radius: 5%;
+    margin-right: 5%;
+    color: white;
+    width: 22%;
+    margin-top: -7vh;
+    left: 70%;
+    font-size: 1.7vw;
+    text-align: center;
+}
+
+#compra p {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+#compra #precio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+#compra .oferta {
+    color: #FD6262;
+}
+
+#compra img {
+    max-width: 100%;
+    margin-top: 1vh;
+}
+
+#compra #cuenta_atras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FD6262;
+}
+
+#compra button {
+    width: 15vw;
+    height: 5vh;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+#compra .garantia {
+    font-size: 1.4vw;
+    text-decoration: underline;
+}
+
+#temas {
+    margin: 15px 35% 0 5%;
+    color: white;
+    background-color: #192229;
+    padding: 2vh 2vw;
+}
+
+#temas>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vw 1vh;
+    background-color: #3A3C3E;
+    font-size: 2vw;
+    padding: 1vh 1vw;
+}
+
+
+
+.caract_tema>div {
+    display: flex;
+    align-items: center;
+}
+
+#comentarios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 15px 35% 0 5%;
+    color: white;
+    background-color: #192229;
+}
+
+#comentarios>div {
+    padding: 1vh 1vw;
+}
+
+#comentarios .comentario_user {
+    display: flex;
+    color: #1192EE;
+    font-size: 1.8vw;
+}
+
+.valoracion_com {
+    padding-left: 3vw;
+}
+
+.comentario>p {
+    font-size: 1.5vw;
+    padding-left: 3vw;
+}
+
+#cursos_relacionados {
+    margin: 15px 5% 0 5%;
+}
+
+#cursos_relacionados>div {
+    display: grid;
+    background-color: #1A1F23;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1vw;
+}
+
+#cursos_relacionados>p {
+    color: white;
+    padding-bottom: 0.5vh;
+    font-size: 2.4vw;
+    border-bottom: 2px solid black;
+}
+
+#cursos_relacionados .curso {
+    background-color: #3A3C3E;
+    text-align: center;
+    margin: 1vh 1vw;
+    padding: 1vh 1vw;
+    border-radius: 2vw;
+    color: #1192EE;
+    font-size: 1.8vw;
+}
+
+.curso img {
+    width: 100%;
+}
+
+.curso p {
+    margin: 1vh 1vw;
+}
+
+/*Paso intermedio de Desktop*/
+@media screen and (max-width: 950px) {
+
+    #caract_curso {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #caract_curso>div {
+        width: 70%;
+        font-size: 1.5vw;
+    }
+
+    #compra {
+        margin-top: -15vh;
+    }
+}
+
+/*Desktop mas de 2170px*/
+@media screen and (min-width: 2170px) {
+    #compra {
+        margin-top: -35vh;
+        left: 75%;
+    }
+}
+
+/*MOBILE*/
+@media screen and (max-width: 700px) {
+
+    #caract_curso {
+        margin: 15px 5% 0 5%;
+    }
+
+    #caract_curso>div {
+        font-size: 3vw;
+    }
+
+    #temas {
+        margin: 15px 0 0 0;
+        padding: 1vh 1vw;
+    }
+
+    .caract_tema>div>p {
+        font-size: 6vw;
+        margin-right: 2vw;
+    }
+
+    #temas>div {
+        font-size: 5vw;
+        padding-left: 3vw;
+    }
+
+    .videos_oculto {
+        display: none;
+    }
+
+    #comentarios {
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin: 15px 5% 0 5%;
+        background-color: #3A3C3E;
+    }
+
+    .comentario {
+        border-top: 2px solid black;
+    }
+
+    .comentario>p {
+        font-size: 4.5vw;
+    }
+
+    #comentarios .comentario_user {
+        font-size: 4.5vw;
+    }
+
+    #comentarios .comentario_user p{
+        margin-left: 2.5vw;
+    }
+
+    #comentarios .valoracion_com {
+        margin-top: -4vh;
+        padding-left: 47vw;
+        font-size: 6vw;
+    }
+
+
+
+    #cabecera {
+        flex-direction: column-reverse;
+        margin: 0 5%;
+        text-align: center;
+    }
+
+    #datos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3.5vw;
+        padding-top: 0;
+    }
+
+    #puntuacion p {
+        display: none;
+    }
+
+    #datos h1 {
+        font-size: 10vw;
+    }
+
+    #img_curso {
+        width: 100%;
+    }
+
+    #cursos_relacionados {
+        margin: 15px 2% 0 2%;
+        ;
+    }
+
+    #cursos_relacionados>div {
+        grid-template-columns: 1fr;
+    }
+
+    #cursos_relacionados>p {
+        font-size: 6vw;
+    }
+
+    #cursos_relacionados .curso {
+        padding: 2vh 2vw;
+        margin: 2.5vh 2.5vw;
+    }
+
+    #cursos_relacionados .curso p {
+        font-size: 4vw;
+    }
+
+    #compra {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        font-size: 7vw;
+        text-align: right;
+    }
+
+    #compra img {
+        display: none;
+    }
+
+    #compra button {
+        width: 50%;
+        font-size: 5vw;
+        right: 0;
+        float: right;
+        height: 7vh;
+        margin-bottom: 1vh;
+    }
+
+    #compra #precio {
+        justify-content: center;
+    }
+
+    #compra p {
+        margin-left: 5vw;
+    }
+
+    .garantia {
+        text-align: left;
+        font-size: 5vw !important;
+    }
+}
