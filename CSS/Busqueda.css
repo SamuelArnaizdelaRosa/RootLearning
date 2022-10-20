@@ -237,6 +237,13 @@ body {
 }
 
 @media (max-width: 900px){
+    .zona_buscar {
+        height: 200px; 
+        font-size: 40px; 
+    }
+    .zona_buscar input{
+        margin: 0px 8%;
+    }
     .curso {
         width: 90%;
         font-size: 18px; 
@@ -257,5 +264,9 @@ body {
     .curso_propiedades div{
         width: 70px;
         height: 70px;
+    }
+
+    .nav_busqueda {
+        display: none;
     }
 }
