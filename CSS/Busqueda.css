@@ -178,7 +178,7 @@ body {
 /*Cursos*/
 .curso {
     width: 382px;
-    height: 559px;
+    padding-bottom: 5%;
     position: relative;
     z-index: 0;
     text-align: center;
@@ -191,4 +191,71 @@ body {
     font-size: 30px;
     padding: 25px 0;
     color: #1192EE;
+}
+
+.curso img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.curso_autor {
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
+    margin-top: 5px;
+    font-size: 21px;
+    color: white;
+}
+
+.curso_autor svg {
+    padding-right: 10px;
+}
+
+.curso_descricion {
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+}
+
+.curso_propiedades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curso_propiedades div{
+    width: 98.54px;
+    height: 98px;
+    background: #323537;
+    border-radius: 21px;
+    margin: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 900px){
+    .curso {
+        width: 90%;
+        font-size: 18px; 
+    }
+
+    .curso_autor {
+        font-size: 18px; 
+    }
+    
+    .curso_descricion {
+        font-size: 18px; 
+    }
+    
+    .curso_propiedades div{
+        font-size: 18px;  
+    }
+
+    .curso_propiedades div{
+        width: 70px;
+        height: 70px;
+    }
 }

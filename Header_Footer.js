@@ -60,7 +60,7 @@ window.addEventListener("load",function() {
               }
             },{
               // screens greater than >= 1024px
-              breakpoint: 1024,
+              breakpoint: 1230,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -93,7 +93,7 @@ window.addEventListener("load",function() {
               }
             },{
               // screens greater than >= 1024px
-              breakpoint: 1024,
+              breakpoint: 1230,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -126,7 +126,7 @@ window.addEventListener("load",function() {
               }
             },{
               // screens greater than >= 1024px
-              breakpoint: 1024,
+              breakpoint: 1230,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
@@ -159,7 +159,7 @@ window.addEventListener("load",function() {
               }
             },{
               // screens greater than >= 1024px
-              breakpoint: 1024,
+              breakpoint: 1230,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
