@@ -274,10 +274,6 @@ header img{
     margin: 0px 10px;
 }
 
-.prueba {
-    height: 2000px;
-}
-
 /*Responsive*/
 @media (max-width: 1300px){
     .elementos_links div{ 
