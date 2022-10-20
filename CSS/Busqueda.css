@@ -47,5 +47,140 @@
 /*nav buscar*/
 .nav_busqueda {
     height: 75px;
+    display: flex;
     background: #283540;
+    justify-content: center;
+}
+
+.nav_busqueda div {
+    height: 73px;
+    padding: 0px 30px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#nav_busqueda_todos {
+    border-bottom: 3px solid #1192EE;
+}
+
+/*titulos*/
+.titulo_buscar {
+    padding: 0px 20px;
+    margin: 30px 0;
+    font-size: 25px;
+    color: white;
+}
+/*Carrousel*/
+
+.carrousel {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.carrousel_contenedor {
+    position: relative;
+    z-index: 2;
+}
+
+.carousel_elemento {
+    display: flex;
+}
+
+.carrousel_siguiente, .carrousel_anterior,
+.carrousel_siguiente_2, .carrousel_anterior_2,
+.carrousel_siguiente_3, .carrousel_anterior_3,
+.carrousel_siguiente_4, .carrousel_anterior_4 {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    border: none;
+    color: white;
+    opacity: 20%;
+    transition: all 0.6s;
+}
+
+.carrousel_anterior,
+.carrousel_anterior_2,
+.carrousel_anterior_3,
+.carrousel_anterior_4 {
+    left: 0px;
+}
+
+.carrousel_anterior:hover,
+.carrousel_anterior_2:hover,
+.carrousel_anterior_3:hover,
+.carrousel_anterior_4:hover{
+    opacity: 100%;
+}
+
+.carrousel_siguiente,
+.carrousel_siguiente_2,
+.carrousel_siguiente_3,
+.carrousel_siguiente_4 {
+    right: 0px;
+}
+
+.carrousel_siguiente:hover,
+.carrousel_siguiente_2:hover,
+.carrousel_siguiente_3:hover,
+.carrousel_siguiente_4:hover{
+    opacity: 100%;
+}
+
+.carousel_indicador .glider-dot,
+.carousel_indicador_2 .glider-dot,
+.carousel_indicador_3 .glider-dot,
+.carousel_indicador_4 .glider-dot {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: #FFFFFF;
+    opacity: .2;
+    border-radius: 0;
+}
+
+.carousel_indicador .glider-dot:hover,
+.carousel_indicador_2 .glider-dot:hover,
+.carousel_indicador_3 .glider-dot:hover,
+.carousel_indicador_4 .glider-dot:hover {
+    opacity: .5;
+}
+
+.carousel_indicador .glider-dot.active,
+.carousel_indicador_2 .glider-dot.active,
+.carousel_indicador_3 .glider-dot.active,
+.carousel_indicador_4 .glider-dot.active{
+    opacity: 1;
+}
+
+/*Cursos*/
+.curso {
+    width: 382px;
+    height: 559px;
+    position: relative;
+    text-align: center;
+
+    background: #424649;
+    border-radius: 37px;
+}
+
+.curso_titulo {
+    font-size: 30px;
+    color: #1192EE;
 }

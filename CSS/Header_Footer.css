@@ -8,8 +8,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
-    overflow-y: hidden;
+    background-color: #192229;
 }
 
 /* width */
@@ -30,6 +29,12 @@ body {
 
 /*Header*/
 header {
+    height: 80px;
+    z-index: 999;
+    position: relative;
+}
+
+.nav_principal {
     display: flex;
 
     position: fixed;
@@ -44,7 +49,7 @@ header {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-header>div {
+.nav_principal>div {
     height: 80px;
     align-items: center;
     display: flex;
@@ -121,7 +126,7 @@ header>div {
     align-items: center;
     padding: 0 15px;
     cursor: pointer;
-    display: none;
+    display: none !important;
 }
 
 .elemtentos_burguer img{
@@ -129,6 +134,7 @@ header>div {
 }
 
 /*Busqueda*/
+
 #barra_busqueda {
     display: flex;
 }
@@ -166,7 +172,7 @@ header>div {
     width: 0px;
 }
 
-.active {
+.activo {
     width: 100%;
 }
 
@@ -271,7 +277,7 @@ header>div {
 }
 
 /*Porpiedades extra*/
-header img{
+.nav_principal img{
     height: 90%;
     margin: 0px 10px;
 }
@@ -282,7 +288,7 @@ header img{
         margin: 0px 5px;
     }
 
-    header img {
+    .nav_principal img {
         height: 70%;
     }
 }
@@ -308,7 +314,7 @@ header img{
 }
 
 @media (max-width: 1050px){
-    header img {
+    .nav_principal img {
         height: 60%;
     }
     .elementos_link { 
@@ -349,7 +355,7 @@ header img{
 
     /*Burger*/
    .elemtentos_burguer {
-        display: flex;
+        display: flex !important;
    }
 
    #elementos_links {
