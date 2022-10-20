@@ -3,9 +3,10 @@
     height: 100vh;
 }
 
-.body {
+body {
     background-color: #192229;
 }
+
 /*Zona de buscar*/
 .zona_buscar {
     height: 332px;  
