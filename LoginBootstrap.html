@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--  BOOTSTRAP CSS only -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    -->
+    <link rel="stylesheet" href="CSS/Login.css">
+    <link rel="stylesheet" href="CSS/Header_Footer.css">
+    <script src="JS/Login.js"></script>
+    <script src="JS/Header.js"></script>
+    
+    <title>PAGINA LOGIN CURSOS</title>
+    <!--IONIC-->
+   <!-- 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    -->
+
+</head>
+
+<header>
+    <div class="nav_principal">
+        <div>
+            <img src="logo.png">
+        </div>
+
+        <ul id="elementos_links" class="menu_cerrado">
+            <div id="login_nav">
+                <a href="LoginBootstrap.html"><button type="button" class="login">Inicia Sesión</button></a>
+                <a href="register.html"><button type="button" class="register">¡Registrate!</button></a>
+            </div>
+            <li class="elemento_item elemento_item--show">
+                <a href="Busqueda.html" class="elementos_link">
+                    Cursos
+                    <svg class="flecha" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.25171 18L15.2517 12L9.25171 6" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <ul class="elemento_destino">
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Sofwate</a>
+                    </li>
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Movil</a>
+                    </li>
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Web</a>
+                    </li>
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">BBDD</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="elemento_item elemento_item--show">
+                <a href="Busqueda.html" class="elementos_link">
+                    Ofertas
+                    <svg class="flecha" width="25" height="24" viewBox="0 0 25 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.25171 18L15.2517 12L9.25171 6" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+                <ul class="elemento_destino">
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Ultimas ofertas</a>
+                    </li>
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Ofertas diarias</a>
+                    </li>
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Packs</a>
+                    </li>
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Ofertas limitadas</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="elemento_item">
+                <a href="Busqueda.html" class="elementos_link">Publica tu curso</a>
+                <ul class="elemento_destino" id="publicar_curso_extra">
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Mis cursos Publicados</a>
+                    </li>
+                    <li class="elemento_dentro">
+                        <a href="Busqueda.html" class="elementos_link elementos_link--dentro">Publica tu curso</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+
+        <form method="get" id="barra_busqueda" class="busqueda" action="Busqueda.html">
+            <button onclick="showBar()" id="boton_salida" class="boton_salida--desactivado" type="button">
+                <svg width="24" height="24" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.1405 17.4574H7.2002H28.9242C29.5798 17.4574 30.2675 16.7746 30.2675 15.7198C30.2675 14.6653 29.5798 13.9823 28.9242 13.9823H7.20021H6.14051L6.81429 13.1644L14.0946 4.32674C14.0946 4.32674 14.0946 4.32673 14.0946 4.32672C14.6623 3.63756 14.6623 2.48734 14.0946 1.79816L14.0946 1.79812C14.0259 1.71466 13.9532 1.64348 13.8787 1.58371L6.1405 17.4574ZM6.1405 17.4574L6.81428 18.2753M6.1405 17.4574L6.81428 18.2753M6.81428 18.2753L14.0946 27.113C14.6623 27.8022 14.6623 28.9524 14.0946 29.6417C13.8217 29.9728 13.4875 30.1148 13.1772 30.1148C12.8668 30.1148 12.5326 29.9728 12.2597 29.6416C12.2597 29.6416 12.2597 29.6416 12.2597 29.6416L1.83278 16.9841L1.83276 16.9841M6.81428 18.2753L1.83276 16.9841M1.83276 16.9841C1.26508 16.2951 1.26503 15.1448 1.83278 14.4555C1.83278 14.4555 1.83279 14.4555 1.83279 14.4555L12.2597 1.79819C12.7232 1.23552 13.3858 1.18869 13.8787 1.5837L1.83276 16.9841Z"
+                        fill="white" stroke="white" />
+                </svg>
+            </button>
+            <input type="text" id="texto_busqueda" name="busqueda" placeholder="Buscar..." class="desactivado" />
+            <button onclick="showBar()" id="boton_busqueda" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21.7099 20.29L17.9999 16.61C19.44 14.8144 20.1374 12.5353 19.9487 10.2413C19.76 7.94731 18.6996 5.81279 16.9854 4.27665C15.2713 2.74051 13.0337 1.91951 10.7328 1.98247C8.43194 2.04543 6.24263 2.98757 4.61505 4.61515C2.98747 6.24273 2.04534 8.43204 1.98237 10.7329C1.91941 13.0338 2.74041 15.2714 4.27655 16.9855C5.81269 18.6997 7.94721 19.7601 10.2412 19.9488C12.5352 20.1375 14.8143 19.4401 16.6099 18L20.2899 21.68C20.3829 21.7737 20.4935 21.8481 20.6153 21.8989C20.7372 21.9497 20.8679 21.9758 20.9999 21.9758C21.1319 21.9758 21.2626 21.9497 21.3845 21.8989C21.5063 21.8481 21.6169 21.7737 21.7099 21.68C21.8901 21.4935 21.9909 21.2443 21.9909 20.985C21.9909 20.7257 21.8901 20.4765 21.7099 20.29ZM10.9999 18C9.61544 18 8.26206 17.5895 7.11091 16.8203C5.95977 16.0511 5.06256 14.9579 4.53275 13.6788C4.00293 12.3997 3.86431 10.9922 4.13441 9.63437C4.4045 8.2765 5.07119 7.02922 6.05016 6.05026C7.02912 5.07129 8.27641 4.4046 9.63427 4.13451C10.9921 3.86441 12.3996 4.00303 13.6787 4.53285C14.9578 5.06266 16.051 5.95987 16.8202 7.11101C17.5894 8.26216 17.9999 9.61553 17.9999 11C17.9999 12.8565 17.2624 14.637 15.9497 15.9498C14.6369 17.2625 12.8564 18 10.9999 18Z"
+                        fill="white" />
+                </svg>
+            </button>
+        </form>
+
+        <a href="compra.html" style="margin-top: 7.5px;">
+            <div class="carrito">
+                <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M36.5204 20.442C36.5281 23.0736 34.5242 25.2655 31.9262 25.4673L13.3834 26.9079C13.5659 28.583 14.08 28.583 14.9591 28.583H33.2033C33.7027 28.5637 34.1841 28.773 34.5136 29.1525C36.2648 30.1628 37.0423 32.2994 36.3555 34.2147C35.6688 36.1299 33.7172 37.2683 31.7314 36.9119C29.7456 36.5555 28.3018 34.8077 28.3105 32.7707C28.3126 32.4895 28.3404 32.2092 28.3934 31.9331H21.5933C21.6187 32.2117 21.6187 32.4921 21.5933 32.7707C21.5933 35.0835 19.7369 36.9584 17.4469 36.9584C15.1569 36.9584 13.3005 35.0835 13.3005 32.7707C13.3017 32.4313 13.3463 32.0935 13.4332 31.7656C9.98338 30.9448 9.98338 27.3266 9.98338 25.3668L6.91504 6.80666H5.00769C4.09169 6.80666 3.34912 6.05669 3.34912 5.13156C3.34912 4.20643 4.09169 3.45646 5.00769 3.45646H8.32482C9.14646 3.44578 9.85197 4.04433 9.98338 4.86355L10.2819 6.80666L34.9779 8.48176C35.8483 8.54344 36.5226 9.27565 36.5204 10.1569V20.442ZM33.2033 32.7707C33.2033 32.3081 32.832 31.9332 32.374 31.9332C31.916 31.9332 31.5447 32.3081 31.5447 32.7707C31.5447 33.2333 31.916 33.6083 32.374 33.6083C32.832 33.6083 33.2033 33.2333 33.2033 32.7707ZM17.4469 31.9332C17.9049 31.9332 18.2762 32.3081 18.2762 32.7707C18.2762 33.2333 17.9049 33.6083 17.4469 33.6083C16.9889 33.6083 16.6176 33.2333 16.6176 32.7707C16.6176 32.3081 16.9889 31.9332 17.4469 31.9332ZM13.0517 23.5577H13.1678L31.6774 22.1338C32.5412 22.0638 33.2061 21.334 33.2033 20.4587V11.7315L10.8458 10.1569L13.0517 23.5577Z"
+                        fill="white" />
+                </svg> 
+            </div>
+        </a>
+
+        <div id="login" class="menu_cerrado">
+            <a href="LoginBootstrap.html"><button type="button" class="login">Inicia Sesión</button></a>
+            <a href="register.html"><button type="button" class="register">¡Registrate!</button></a>
+        </div>
+
+        <div class="elemtentos_burguer" onclick="showBurger()">
+            <svg width="36" height="36" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7 8.75C7 7.7835 7.7835 7 8.75 7L33.25 7C34.2165 7 35 7.7835 35 8.75C35 9.7165 34.2165 10.5 33.25 10.5L8.75 10.5C7.7835 10.5 7 9.7165 7 8.75Z"
+                    fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7 21C7 20.0335 7.7835 19.25 8.75 19.25L33.25 19.25C34.2165 19.25 35 20.0335 35 21C35 21.9665 34.2165 22.75 33.25 22.75L8.75 22.75C7.7835 22.75 7 21.9665 7 21Z"
+                    fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M7 33.25C7 32.2835 7.7835 31.5 8.75 31.5L33.25 31.5C34.2165 31.5 35 32.2835 35 33.25C35 34.2165 34.2165 35 33.25 35L8.75 35C7.7835 35 7 34.2165 7 33.25Z"
+                    fill="white" />
+            </svg>
+        </div>
+    </div>
+</header>
+
+<body>
+    <input type="checkbox" id="cerrar">
+    <label for="cerrar" id="btn-cerrar">   X</label>
+    <div class="modal">
+        <div class="contenido">
+        <h2>Visita nuestros cursos</h2>
+        <img src="logo.png" alt="">
+        </div>
+    </div>
+   
+    <!--LOGUEARSE-->
+    <section id="loguear">
+        <div>
+            <h3>Iniciar sesión en tu cuenta Root Learning</h3>
+        </div>
+            <div class="active"></div>
+            <div class="top">
+        
+         
+    <form id="loginform">
+                <div class="botones_loguear">
+                    <button type="button" class="btn btn-primary" id="fac">
+                        <svg width="15" height="15" viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.641602" width="34.7334" height="35" rx="17.3667" fill="#1877F2"/>
+                            <path d="M24.7684 22.5586L25.5384 17.5H20.7219V14.2188C20.7219 12.8345 21.3935 11.4844 23.5507 11.4844H25.7419V7.17773C25.7419 7.17773 23.7542 6.83594 21.8548 6.83594C17.8862 6.83594 15.2948 9.25928 15.2948 13.6445V17.5H10.8853V22.5586H15.2948V34.7881C16.1801 34.9282 17.0857 35 18.0083 35C18.9309 35 19.8366 34.9282 20.7219 34.7881V22.5586H24.7684Z" fill="white"/>
+                            </svg>
+                   Continuar con Facebook
+                </button>
+            
+            <div>
+                <button type="button" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" width="15" height="15"><defs>
+                    <path id="a" d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 
+                    2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z"/></defs>
+                    <clipPath id="b"><use xlink:href="#a" overflow="visible"/></clipPath><path clip-path="url(#b)" fill="#FBBC05" 
+                    d="M0 37V11l17 13z"/><path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"/><path clip-path="url(#b)"
+                    fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"/><path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"/></svg>
+                Continuar con Google
+            </button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 496.255 608.728">
+                    <path d="M273.81 52.973C313.806.257 369.41 0 369.41 0s8.271 49.562-31.463 97.306c-42.426 50.98-90.649
+                     42.638-90.649 42.638s-9.055-40.094 26.512-86.971zM252.385 174.662c20.576 0 58.764-28.284 108.471-28.284
+                      85.562 0 119.222 60.883 119.222 60.883s-65.833 33.659-65.833 115.331c0 92.133 82.01 123.885 82.01 123.885s-57.328 
+                      161.357-134.762 161.357c-35.565 0-63.215-23.967-100.688-23.967-38.188 0-76.084 24.861-100.766 24.861C89.33 608.73 
+                      0 455.666 0 332.628c0-121.052 75.612-184.554 146.533-184.554 46.105 0 81.883 26.588 105.852 26.588z" fill="#999"/></svg>
+                      Continuar con Apple
+            </button>
+            </div>
+        </div>
+        <div class="autenticacion">
+            <div>
+                <input type="text" id='login-email' placeholder="Correo Electrónico">
+            </div>
+            <div>
+                <input type="password" id='login-password' name="password" placeholder="Contraseña">
+            </div>
+   
+        </div>
+            <div>
+                <button type="button" class="btn btn-primary" id="botonBootstrap">Iniciar sesión</button>
+            </div>
+        </form>  
+        
+        <p class="parrafo_boton">No tienes acceso? <a href="register.html">Registrate</a> <br> o ¿Has olvidado la contraseña?</p>
+    </section>
+</body>
+
+<footer id="footer_main">
+    <div id="img_footer">
+        <img src="logo.png" alt="Root Learning">
+    </div>
+    <div id="enlaces_footer">
+        <p id="contacto"><a href="">Contacto</a></p>
+        <p id="trabaja"><a href="">Trabaja con Nosotros</a></p>
+        <p id="blog"><a href="">Blog</a></p>
+        <p id="politica"><a href="">Política de Privacidad</a></p>
+        <p id="copyright"><u>Copyright © 2022 Root Learning SL All rights reserved</u></p>
+    </div>
+    <div id="redes_sociales">
+        <p>¡Síguenos!</p>
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="35" height="35" rx="17.5" fill="#1D9BF0" />
+            <path
+                d="M14.2974 26.7311C22.0586 26.7311 26.3024 20.2998 26.3024 14.7261C26.3024 14.5423 26.3024 14.3586 26.2936 14.1836C27.1161 13.5886 27.8336 12.8448 28.4024 11.9961C27.6499 12.3286 26.8361 12.5561 25.9786 12.6611C26.8536 12.1361 27.5186 11.3136 27.8336 10.3248C27.0199 10.8061 26.1186 11.1561 25.1561 11.3486C24.3861 10.5261 23.2924 10.0186 22.0761 10.0186C19.7486 10.0186 17.8586 11.9086 17.8586 14.2361C17.8586 14.5686 17.8936 14.8923 17.9724 15.1986C14.4636 15.0236 11.3574 13.3436 9.27488 10.7886C8.91613 11.4098 8.70613 12.1361 8.70613 12.9061C8.70613 14.3673 9.44988 15.6623 10.5874 16.4148C9.89613 16.3973 9.24863 16.2048 8.67988 15.8898C8.67988 15.9073 8.67988 15.9248 8.67988 15.9423C8.67988 17.9898 10.1324 19.6873 12.0661 20.0811C11.7161 20.1773 11.3399 20.2298 10.9549 20.2298C10.6836 20.2298 10.4211 20.2036 10.1586 20.1511C10.6924 21.8311 12.2499 23.0473 14.0961 23.0823C12.6524 24.2111 10.8324 24.8848 8.85488 24.8848C8.51363 24.8848 8.18113 24.8673 7.84863 24.8236C9.69488 26.0311 11.9174 26.7311 14.2974 26.7311Z"
+                fill="white" />
+        </svg>
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="35" height="35" rx="17.5" fill="#1877F2" />
+            <path
+                d="M24.312 22.5586L25.0879 17.5H20.2344V14.2188C20.2344 12.8345 20.9111 11.4844 23.085 11.4844H25.293V7.17773C25.293 7.17773 23.29 6.83594 21.376 6.83594C17.377 6.83594 14.7656 9.25928 14.7656 13.6445V17.5H10.3223V22.5586H14.7656V34.7881C15.6577 34.9282 16.5703 35 17.5 35C18.4297 35 19.3423 34.9282 20.2344 34.7881V22.5586H24.312Z"
+                fill="white" />
+        </svg>
+        <svg width="35" height="35" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M8.87509 35.8762C6.79362 35.7816 5.66291 35.4352 4.91084 35.1418C3.91432 34.7538 3.20385 34.292 2.45594 33.5451C1.70803 32.7982 1.24513 32.0878 0.859215 31.0912C0.565875 30.3392 0.219485 29.2085 0.124825 27.127C0.0208042 24.877 0 24.2019 0 18.5016C0 12.8012 0.0228847 12.1271 0.123785 9.87509C0.218444 7.79362 0.566915 6.66499 0.858175 5.91084C1.24617 4.91432 1.70907 4.20385 2.4549 3.4549C3.20177 2.70803 3.91224 2.24409 4.9098 1.85817C5.66187 1.56483 6.79258 1.21844 8.87405 1.12379C11.1251 1.0208 11.8012 1 17.4995 1C23.1998 1 23.8739 1.02288 26.126 1.12379C28.2074 1.21844 29.336 1.56692 30.0902 1.85817C31.0867 2.24409 31.7972 2.70803 32.5451 3.4549C33.293 4.20177 33.7538 4.91328 34.1418 5.9098C34.4352 6.66187 34.7816 7.79258 34.8762 9.87405C34.9792 12.1261 35 12.8002 35 18.5005C35 24.1988 34.9792 24.8749 34.8762 27.127C34.7816 29.2085 34.4331 30.3392 34.1418 31.0912C33.7538 32.0878 33.292 32.7982 32.5451 33.5451C31.7982 34.292 31.0867 34.7538 30.0902 35.1418C29.3381 35.4352 28.2074 35.7816 26.126 35.8762C23.876 35.9792 23.1998 36 17.4995 36C11.8012 36 11.1251 35.9802 8.87509 35.8762Z"
+                fill="url(#paint0_radial_45_8669)" />
+            <path
+                d="M13.529 17.3762C13.529 15.2513 15.2511 13.5283 17.376 13.5283C19.5008 13.5283 21.2238 15.2513 21.2238 17.3762C21.2238 19.5011 19.5008 21.2241 17.376 21.2241C15.2511 21.2241 13.529 19.5011 13.529 17.3762ZM11.4489 17.3762C11.4489 20.6497 14.1024 23.3032 17.376 23.3032C20.6495 23.3032 23.303 20.6497 23.303 17.3762C23.303 14.1027 20.6495 11.4492 17.376 11.4492C14.1024 11.4492 11.449 14.1025 11.449 17.3762M22.1526 11.2142C22.1525 11.4881 22.2336 11.7559 22.3857 11.9838C22.5378 12.2116 22.7541 12.3892 23.0072 12.4942C23.2602 12.5991 23.5387 12.6267 23.8074 12.5733C24.0761 12.52 24.323 12.3882 24.5168 12.1945C24.7106 12.0009 24.8426 11.7541 24.8961 11.4855C24.9497 11.2168 24.9224 10.9383 24.8176 10.6852C24.7129 10.432 24.5355 10.2156 24.3077 10.0633C24.08 9.91103 23.8122 9.82969 23.5383 9.82958H23.5377C23.1705 9.82975 22.8184 9.97566 22.5587 10.2353C22.299 10.4949 22.1529 10.8469 22.1526 11.2142ZM12.7127 26.7718C11.5873 26.7205 10.9757 26.5331 10.5692 26.3747C10.0303 26.1649 9.64576 25.915 9.24149 25.5113C8.83722 25.1076 8.58697 24.7235 8.3781 24.1846C8.21964 23.7783 8.03218 23.1664 7.98103 22.041C7.92507 20.8243 7.91389 20.4588 7.91389 17.3764C7.91389 14.2939 7.92599 13.9295 7.98103 12.7118C8.03228 11.5864 8.22112 10.9757 8.3781 10.5682C8.5879 10.0293 8.83777 9.64481 9.24149 9.24053C9.64521 8.83626 10.0293 8.58602 10.5692 8.37714C10.9755 8.21868 11.5873 8.03123 12.7127 7.98007C13.9294 7.92411 14.2949 7.91294 17.376 7.91294C20.457 7.91294 20.8229 7.92485 22.0406 7.98026C23.166 8.0315 23.7766 8.22034 24.1841 8.37732C24.723 8.5862 25.1075 8.837 25.5118 9.24072C25.9161 9.64444 26.1654 10.0295 26.3752 10.5684C26.5337 10.9747 26.7211 11.5866 26.7723 12.7119C26.8282 13.9296 26.8394 14.2941 26.8394 17.3766C26.8394 20.459 26.8282 20.8235 26.7723 22.0412C26.721 23.1666 26.5327 23.7783 26.3752 24.1847C26.1654 24.7236 25.9155 25.1082 25.5118 25.5115C25.1081 25.9149 24.723 26.1651 24.1841 26.3749C23.7778 26.5334 23.166 26.7208 22.0406 26.772C20.8239 26.8279 20.4584 26.8391 17.376 26.8391C14.2935 26.8391 13.929 26.8279 12.7127 26.772M12.6171 5.9034C11.3883 5.95936 10.5487 6.1542 9.81539 6.43953C9.05644 6.7342 8.41309 7.12951 7.77067 7.77092C7.12825 8.41232 6.73395 9.05576 6.43929 9.81564C6.15395 10.5494 5.95911 11.3886 5.90315 12.6174C5.84627 13.8481 5.83325 14.2416 5.83325 17.3762C5.83325 20.5108 5.84627 20.9043 5.90315 22.135C5.95911 23.3639 6.15395 24.203 6.43929 24.9368C6.73395 25.6957 7.12834 26.3404 7.77067 26.9815C8.413 27.6226 9.05552 28.0174 9.81539 28.3129C10.5501 28.5982 11.3883 28.7931 12.6171 28.849C13.8485 28.905 14.2413 28.9189 17.376 28.9189C20.5106 28.9189 20.9041 28.9059 22.1348 28.849C23.3637 28.7931 24.2028 28.5982 24.9365 28.3129C25.6955 28.0174 26.3388 27.6229 26.9812 26.9815C27.6237 26.3401 28.0171 25.6957 28.3126 24.9368C28.598 24.203 28.7937 23.3638 28.8488 22.135C28.9047 20.9034 28.9177 20.5108 28.9177 17.3762C28.9177 14.2416 28.9047 13.8481 28.8488 12.6174C28.7928 11.3885 28.598 10.5489 28.3126 9.81564C28.0171 9.05668 27.6227 8.41334 26.9812 7.77092C26.3398 7.1285 25.6955 6.7342 24.9375 6.43953C24.2028 6.1542 23.3636 5.95843 22.1357 5.9034C20.9048 5.84716 20.5115 5.8335 17.3773 5.8335C14.2432 5.8335 13.849 5.84652 12.6176 5.9034"
+                fill="white" />
+            <defs>
+                <radialGradient id="paint0_radial_45_8669" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                    gradientTransform="translate(2.26516 35.2333) scale(44.437)">
+                    <stop offset="0.09" stop-color="#FA8F21" />
+                    <stop offset="0.78" stop-color="#D82D7E" />
+                </radialGradient>
+            </defs>
+        </svg>
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="35" height="35" rx="17.5" fill="#0A66C2" />
+            <g clip-path="url(#clip0_45_8666)">
+                <path
+                    d="M7.29175 10.0154C7.29175 9.35843 7.52167 8.81648 7.9815 8.38951C8.44133 7.96251 9.03913 7.74902 9.77486 7.74902C10.4975 7.74902 11.0821 7.95922 11.5288 8.37965C11.9886 8.81321 12.2185 9.37814 12.2185 10.0745C12.2185 10.7051 11.9952 11.2306 11.5485 11.651C11.0887 12.0846 10.4843 12.3014 9.73544 12.3014H9.71573C8.99313 12.3014 8.4085 12.0846 7.96179 11.651C7.51509 11.2175 7.29175 10.6723 7.29175 10.0154ZM7.54794 27.2592V14.0947H11.9229V27.2592H7.54794ZM14.3469 27.2592H18.7219V19.9084C18.7219 19.4485 18.7745 19.0938 18.8796 18.8442C19.0635 18.3975 19.3427 18.0197 19.7171 17.711C20.0916 17.4023 20.5613 17.2479 21.1262 17.2479C22.5977 17.2479 23.3334 18.2398 23.3334 20.2237V27.2592H27.7084V19.7113C27.7084 17.7668 27.2486 16.2921 26.3289 15.287C25.4092 14.282 24.194 13.7794 22.6831 13.7794C20.9883 13.7794 19.6679 14.5086 18.7219 15.9669V16.0063H18.7022L18.7219 15.9669V14.0947H14.3469C14.3732 14.5152 14.3863 15.8224 14.3863 18.0165C14.3863 20.2105 14.3732 23.2914 14.3469 27.2592Z"
+                    fill="white" />
+            </g>
+            <defs>
+                <clipPath id="clip0_45_8666">
+                    <rect x="7.29175" y="7.2915" width="20.4167" height="20.4167" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="35" height="35" rx="17.5" fill="#FF0000" />
+            <path
+                d="M27.6913 12.4904C27.4511 11.5982 26.7476 10.8948 25.8555 10.6546C24.2256 10.2085 17.706 10.2085 17.706 10.2085C17.706 10.2085 11.1864 10.2085 9.55645 10.6374C8.68145 10.8776 7.96087 11.5982 7.72067 12.4904C7.29175 14.1203 7.29175 17.5002 7.29175 17.5002C7.29175 17.5002 7.29175 20.8972 7.72067 22.51C7.96087 23.4021 8.6643 24.1056 9.55645 24.3458C11.2035 24.7918 17.706 24.7918 17.706 24.7918C17.706 24.7918 24.2256 24.7918 25.8555 24.3629C26.7476 24.1227 27.4511 23.4193 27.6913 22.5271C28.1202 20.8972 28.1202 17.5173 28.1202 17.5173C28.1202 17.5173 28.1373 14.1203 27.6913 12.4904Z"
+                fill="white" />
+            <path d="M15.6299 20.6225L21.0515 17.5L15.6299 14.3774V20.6225Z" fill="#FF0000" />
+        </svg>
+        <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="35" height="35" rx="17.5" fill="url(#paint0_linear_45_8668)" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.92173 17.3154C13.0233 15.0927 16.4252 13.6274 18.1273 12.9194C22.9873 10.898 23.9971 10.5469 24.6553 10.5353C24.8001 10.5327 25.1238 10.5686 25.3335 10.7387C25.5105 10.8824 25.5592 11.0765 25.5825 11.2127C25.6058 11.3489 25.6349 11.6591 25.6118 11.9016C25.3484 14.6687 24.2089 21.3839 23.6291 24.4832C23.3838 25.7946 22.9008 26.2343 22.4332 26.2773C21.4169 26.3708 20.6452 25.6057 19.6609 24.9605C18.1207 23.9509 17.2506 23.3224 15.7555 22.3371C14.0277 21.1986 15.1478 20.5728 16.1324 19.55C16.3901 19.2824 20.8678 15.2096 20.9544 14.8402C20.9653 14.794 20.9753 14.6217 20.873 14.5308C20.7707 14.4398 20.6197 14.4709 20.5107 14.4957C20.3562 14.5307 17.8957 16.157 13.1291 19.3746C12.4307 19.8542 11.7981 20.0879 11.2313 20.0756C10.6064 20.0621 9.40448 19.7223 8.51096 19.4319C7.41502 19.0756 6.54399 18.8873 6.61984 18.2823C6.65934 17.9671 7.09331 17.6449 7.92173 17.3154Z"
+                fill="white" />
+            <defs>
+                <linearGradient id="paint0_linear_45_8668" x1="17.5" y1="0" x2="17.5" y2="34.7404"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#2AABEE" />
+                    <stop offset="1" stop-color="#229ED9" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+    </div>
+</footer>
+
+    
+  <!--  <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js"></script>-->
+  <!--   <script src="https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js"></script>
+
+    <script class="module">
+        
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCDmZiLPYJgNAUtPyVVL6ZJAAZ1CO5I5wo",
+          authDomain: "fp-app-8bd60.firebaseapp.com",
+          projectId: "fp-app-8bd60",
+          storageBucket: "fp-app-8bd60.appspot.com",
+          messagingSenderId: "867006443756",
+          appId: "1:867006443756:web:581488ca40cf8b291d35c9"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+      </script>
+    -->
+      <!--    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCSbcjbcEiJuQpDxAepTxClHOjnHmSk5P8",
+          authDomain: "nuevoproyecto-c1723.firebaseapp.com",
+          projectId: "nuevoproyecto-c1723",
+          storageBucket: "nuevoproyecto-c1723.appspot.com",
+          messagingSenderId: "699642540740",
+          appId: "1:699642540740:web:0badd3058dd6e3a975cf91"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+     
+
+
+
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '{your-app-id}',
+        cookie     : true,
+        xfbml      : true,
+        version    : '{api-version}'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+      
+  </script>
+   -->
+  <!-- BOOTSTRAP
+         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  -->
+  <!--IONIC JS-->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  -->
+</body>
+</html>

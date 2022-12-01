@@ -1,0 +1,163 @@
+* {
+    font-weight: unset !important;
+    line-height: unset !important;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #3A3C3E;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.curso1_image{
+    display: flex;
+}
+.curso2_image{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.curso1_image img,.curso2_image img {
+    border-radius: 20px;
+}
+
+.titulo_1{
+    text-align: center;
+    width: 30%;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.linea{
+    width:70% ;  
+    margin: 0;
+}
+
+.der{
+    text-align: center;
+    margin-top: 60px;
+}
+
+#cesta{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 0;
+}
+.titulo_1_1{
+    text-align: initial;
+    margin-left: 11px;
+}
+
+.usu{
+    display: flex;
+    text-align: center;
+    border: 2px solid #323537;
+    padding: 6px;
+    border-radius: 25px;
+    width: 110%;
+    background: #323537;
+    color: white;
+    margin-top: 6px;
+}
+  
+.svgg{
+    display: flex;
+}
+
+.ali{
+    display: flex;
+}
+.nom_usu{
+    margin-top: 14px;
+    margin-left: 6px;
+    display: block;
+}
+.estrellas{
+    display: flex;
+    text-align: center;
+    border: 2px solid #323537;
+    padding: 6px;
+    border-radius: 25px;
+    width: 110%;
+    background: #323537;
+    color: white;
+    margin-top: 6px;
+}
+.tiempo{
+    
+    text-align: center;
+    margin-left: 8px;
+}
+.curso1{
+    width: 90%;
+    display: flex;
+    margin: auto 6px 20px;
+}
+
+.curso2{
+    margin-top: 20px;
+    display: flex;
+    width: 60%;
+}
+
+.precioo{
+    font-size: 30px;
+    color: white;
+    
+}
+
+.promo{
+    color: rgb(230, 174, 71);
+}
+
+
+.button_pagar {
+    background-color: #1F1960;
+    border: none;
+    color: white;
+    padding: 20px 65px;
+    border-radius: 4px;
+    margin: 10px 10px;
+    
+}
+.button_x {
+    background-color:red;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    margin-top: 20px;
+}
+
+.input_cupon {
+    border: none;
+    background-color: #efefef;
+    padding: 6px 16px;
+    border-radius: 6px;
+    width: 40%;
+    font-size: 14px;
+}
+.button_aplicar {
+    background-color: #1F1960;
+    border-color: #1F1960;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 10px;
+    margin: 10px 10px;
+}

@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3A3C3E;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-column-gap: 2vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+form>div {
+    width: 100%;
+}
+
+
+#icon {
+    width: 171px;
+    height: 90px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+    color: #1192EE;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+hr {
+    border: 1px solid #ffffff;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+h4 {
+    margin-left: 110px;
+    color: #1192EE;
+}
+
+.form-register {
+    width: 800px;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 8px;
+    font-family: 'calibri';
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-register h4 {
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+button {
+    width: 178px;
+    height: 38px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid #606164;
+    background-color: #1F1960;
+    color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary{
+    border: 1px solid #606164;
+    background-color: #1F1960 !important;
+    color: #ffffff;
+    
+}
+
+#interior_button {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.buttons span {
+    margin-left: 10px;
+}
+
+.names {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.surnames {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.mail {
+    grid-column: span 2;
+    grid-row: 2;
+}
+
+.contra {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.r_contra {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.text_input {
+    width: 100%;
+    height: 38px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #2A316A;
+    color: #ffffff;
+    background-color: #606164;
+}
+
+a {
+    color: #3477A8;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.btn-secondary {
+    width: 580px;
+    height: 38px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    background-color: #1F1960 !important;
+    color: #ffffff;
+    border: 1px solid #606164;
+    grid-column: span 2;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#login {
+    text-align: center;
+}
+
+@media(max-width: 850px) {
+    form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) !important;
+        justify-items: center;
+    }
+
+    .form-register {
+        width: unset;
+    }
+
+    hr{
+        align-self: center;
+        width:60%;
+    }
+
+    h4{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    button{
+        width: 89px;
+    }
+
+    button span{
+        display:none;
+    }
+
+    .names {
+        grid-column: 1;
+        grid-row: 1;
+        width: 40%;
+    }
+
+    .surnames {
+        grid-column: 1;
+        grid-row: 2;
+        width: 40%;
+    }
+
+    .mail {
+        grid-column: 1;
+        grid-row: 3;
+        width: 40%;
+    }
+
+    .contra {
+        grid-column: 1;
+        grid-row: 4;
+        width: 40%;
+    }
+
+    .r_contra {
+        grid-column: 1;
+        grid-row: 5;
+        width: 40%;
+    }
+
+    .btn-secondary{
+        grid-column: 1; 
+        grid-row: 6;
+        width: 40%;
+    }
+}

@@ -36,4 +36,3 @@ function loaded() {
 
     document.getElementById("busqueda_texto_item").innerHTML = busqueda
 };
-

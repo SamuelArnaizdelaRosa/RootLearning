@@ -10,22 +10,9 @@ body {
     padding: 0;
 }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
+img, svg {
+    vertical-align: unset;
 }
-
-/* Track */
-::-webkit-scrollbar-track {
-    border-radius: 10px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #1F1960;
-    border-radius: 10px;
-}
-
 /*Header*/
 header {
     height: 80px;
@@ -136,6 +123,10 @@ header {
 
 #barra_busqueda {
     display: flex;
+    grid-template-columns: unset;
+    grid-column-gap: unset;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .busqueda,
