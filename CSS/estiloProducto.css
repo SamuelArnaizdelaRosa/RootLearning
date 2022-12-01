@@ -150,7 +150,7 @@ body {
 }
 
 #compra img {
-    max-width: 100%;
+    max-width: 80%;
     margin-top: 1vh;
 }
 
@@ -402,6 +402,7 @@ body {
         left: 0;
         font-size: 7vw;
         text-align: right;
+        margin-top: 19vh;
     }
 
     #compra img {
